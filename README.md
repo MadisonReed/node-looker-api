@@ -1,6 +1,6 @@
 # node-looker-api
 
-LookerApi30Reference - JavaScript client for looker-api-3/0-reference
+LookerApi30Reference - JavaScript client for node-looker-api
 
 ## Details
 
@@ -39,7 +39,7 @@ please follow the procedure in ["Publishing npm packages"](https://docs.npmjs.co
 Then install it via:
 
 ```shell
-npm install looker-api-3/0-reference --save
+npm install node-looker-api
 ```
 
 #### git
@@ -69,7 +69,7 @@ Then include *bundle.js* in the HTML pages.
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('node-looker-api');
 
 var api = new LookerApi30Reference.ApiAuthApi()
 
