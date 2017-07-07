@@ -1,6 +1,6 @@
 {
   "name": "node-looker-api",
-  "version": "3.1.6",
+  "version": "3.1.7",
   "description": "API wrapper for Looker API3",
   "license": "EULA",
   "main": "src/index.js",
