@@ -9,37 +9,6 @@
 }(function(ApiClient, AccessFilter, AccessToken, ApiSession, ApiVersion, ApiVersionElement, BackupConfiguration, ContentFavorite, ContentMeta, ContentMetaGroupUser, ContentView, CreateDashboardRenderTask, CreateQueryTask, CredentialsApi, CredentialsApi3, CredentialsEmail, CredentialsEmbed, CredentialsGoogle, CredentialsLDAP, CredentialsLookerOpenid, CredentialsSaml, CredentialsTotp, DBConnection, DBConnectionBase, DBConnectionTestResult, Dashboard, DashboardBase, DashboardElement, DashboardFilter, DashboardLayout, DashboardLayoutComponent, DataActionForm, DataActionFormField, DataActionFormSelectOption, DataActionRequest, DataActionResponse, Datagroup, Dialect, DialectInfo, DialectInfoOptions, Error, GitStatus, Group, GroupIdForGroupInclusion, GroupIdForGroupUserInclusion, HomepageItem, HomepageSection, LDAPConfig, LDAPConfigTestResult, LDAPGroupRead, LDAPGroupWrite, LDAPUser, LegacyFeature, Look, LookBasic, LookModel, LookWithDashboards, LookWithQuery, LookmlModel, LookmlModelExplore, LookmlModelExploreAccessFilter, LookmlModelExploreAlias, LookmlModelExploreAlwaysFilter, LookmlModelExploreConditionallyFilter, LookmlModelExploreError, LookmlModelExploreField, LookmlModelExploreFieldEnumeration, LookmlModelExploreFieldSqlCase, LookmlModelExploreFieldset, LookmlModelExploreJoins, LookmlModelExploreSet, LookmlModelNavExplore, ModelSet, ModelsNotValidated, Permission, PermissionSet, PrefetchAccessFilterValue, PrefetchDashboardFilterValue, PrefetchDashboardRequest, PrefetchMapper, Project, ProjectError, ProjectFile, ProjectValidation, ProjectValidationCache, ProjectWorkspace, Query, QueryTask, RenderTask, Role, RunningQueries, SamlConfig, SamlGroupRead, SamlGroupWrite, SamlMetadataParseResult, SamlUserAttributeRead, SamlUserAttributeWrite, ScheduledPlan, ScheduledPlanDestination, Session, Snippet, Space, SpaceBase, SqlQuery, SqlQueryCreate, Timezone, User, UserAttribute, UserAttributeGroupValue, UserAttributeWithValue, UserIdOnly, UserPublic, ValidationError, ValidationErrorDetail, Whitelabel, Workspace, ApiAuthApi, AuthApi, ConfigApi, ConnectionApi, ContentApi, DashboardApi, DataActionApi, DatagroupApi, GroupApi, HomepageApi, LookApi, LookmlModelApi, ProjectApi, QueryApi, RenderTaskApi, RoleApi, RunningQueriesApi, ScheduledPlanApi, SessionApi, SpaceApi, SqlQueryApi, UserApi, UserAttributeApi, WorkspaceApi) {
   'use strict';
 
-  /**
-   * ### Authorization\n\nThe Looker API uses Looker **API3** credentials for authorization and access control. Looker admins can\ncreate API3 credentials on Looker&#39;s **Admin/Users** page. Pass API3 credentials to the **/login** endpoint to\nobtain a temporary access_token. Include that access_token in the Authorization header of Looker API requests.\nFor details, see [Looker API Authorization](https://looker.com/docs/r/api/authorization)\n\n### Client SDKs\n\nThe Looker API is a RESTful system that should be usable by any programming language capable of making\nHTTPS requests. Client SDKs for a variety of programming languages can be generated from the Looker API&#39;s Swagger\nJSON metadata to streamline use of the Looker API in your applications. A client SDK for Ruby is available\nas an example. For more information, see [Looker API Client SDKs](https://looker.com/docs/r/api/client_sdks)\n\n### Try It Out!\n\nThe &#39;api-docs&#39; page served by the Looker instance includes &#39;Try It Out!&#39; buttons for each API method. After logging\nin with API3 credentials, you can use the \&quot;Try It Out!\&quot; buttons to call the API directly from the documentation\npage to interactively explore API features and responses.\n\n### Versioning\n\nFuture releases of Looker will expand this API release-by-release to securely expose more and more of the core\npower of Looker to API client applications. API endpoints marked as \&quot;beta\&quot; may receive breaking changes without\nwarning. Stable (non-beta) API endpoints should not receive breaking changes in future releases.\nFor more information, see [Looker API Versioning](https://looker.com/docs/r/api/versioning)\n.<br>
-   * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
-   * <p>
-   * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
-   * <pre>
-   * var LookerApi30Reference = require('./index'); // See note below*.
-   * var xxxSvc = new LookerApi30Reference.XxxApi(); // Allocate the API class we're going to use.
-   * var yyyModel = new LookerApi30Reference.Yyy(); // Construct a model instance.
-   * yyyModel.someProperty = 'someValue';
-   * ...
-   * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
-   * ...
-   * </pre>
-   * <em>*NOTE: For a top-level AMD script, use require(['./index'], function(){...}) and put the application logic within the
-   * callback function.</em>
-   * </p>
-   * <p>
-   * A non-AMD browser application (discouraged) might do something like this:
-   * <pre>
-   * var xxxSvc = new LookerApi30Reference.XxxApi(); // Allocate the API class we're going to use.
-   * var yyy = new LookerApi30Reference.Yyy(); // Construct a model instance.
-   * yyyModel.someProperty = 'someValue';
-   * ...
-   * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
-   * ...
-   * </pre>
-   * </p>
-   * @module index
-   * @version 3.0.0
-   */
   var exports = {
     /**
      * The ApiClient constructor.
