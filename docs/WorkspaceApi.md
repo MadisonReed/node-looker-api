@@ -14,11 +14,14 @@ Method | HTTP request | Description
 
 Get All Workspaces
 
-### Get All Workspaces \n\nReturns all workspaces available to the calling user.\n
+### Get All Workspaces 
+
+Returns all workspaces available to the calling user.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.WorkspaceApi()
 
@@ -43,7 +46,7 @@ This endpoint does not need any parameter.
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -54,11 +57,40 @@ No authorization required
 
 Get Workspace
 
-### Get A Workspace \n\nReturns information about a workspace such as the git status and selected branches\nof all projects available to the caller&#39;s user account.\n\nA workspace defines which versions of project files will be used to evaluate expressions\nand operations that use model definitions - operations such as running queries or rendering dashboards. \nEach project has its own git repository, and each project in a workspace may be configured to reference \nparticular branch or revision within their respective repositories. \n\nThere are two predefined workspaces available: \&quot;production\&quot; and \&quot;dev\&quot;. \n\nThe production workspace is shared across all Looker users. Models in the production workspace are read-only.\nChanging files in production is accomplished by modifying files in a git branch and using Pull Requests\nto merge the changes from the dev branch into the production branch, and then telling\nLooker to sync with production.\n\nThe dev workspace is local to each Looker user. Changes made to project/model files in the dev workspace only affect\nthat user, and only when the dev workspace is selected as the active workspace for the API session.  \n(See set_session_workspace()). \n\nThe dev workspace is NOT unique to an API session. Two applications accessing the Looker API using\nthe same user account will see the same files in the dev workspace. To avoid collisions between\nAPI clients it&#39;s best to have each client login with API3 credentials for a different user account.\n\nChanges made to files in a dev workspace are persistent across API sessions. It&#39;s a good\nidea to commit any changes you&#39;ve made to the git repository, but not strictly required. Your modified files\nreside in a special user-specific directory on the Looker server and will still be there when you login in again\nlater and use update_session(workspace_id: \&quot;dev\&quot;) to select the dev workspace for the new API session.\n
+### Get A Workspace 
+
+Returns information about a workspace such as the git status and selected branches
+of all projects available to the caller&#39;s user account.
+
+A workspace defines which versions of project files will be used to evaluate expressions
+and operations that use model definitions - operations such as running queries or rendering dashboards. 
+Each project has its own git repository, and each project in a workspace may be configured to reference 
+particular branch or revision within their respective repositories. 
+
+There are two predefined workspaces available: \&quot;production\&quot; and \&quot;dev\&quot;. 
+
+The production workspace is shared across all Looker users. Models in the production workspace are read-only.
+Changing files in production is accomplished by modifying files in a git branch and using Pull Requests
+to merge the changes from the dev branch into the production branch, and then telling
+Looker to sync with production.
+
+The dev workspace is local to each Looker user. Changes made to project/model files in the dev workspace only affect
+that user, and only when the dev workspace is selected as the active workspace for the API session.  
+(See set_session_workspace()). 
+
+The dev workspace is NOT unique to an API session. Two applications accessing the Looker API using
+the same user account will see the same files in the dev workspace. To avoid collisions between
+API clients it&#39;s best to have each client login with API3 credentials for a different user account.
+
+Changes made to files in a dev workspace are persistent across API sessions. It&#39;s a good
+idea to commit any changes you&#39;ve made to the git repository, but not strictly required. Your modified files
+reside in a special user-specific directory on the Looker server and will still be there when you login in again
+later and use update_session(workspace_id: \&quot;dev\&quot;) to select the dev workspace for the new API session.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.WorkspaceApi()
 
@@ -89,7 +121,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

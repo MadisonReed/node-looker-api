@@ -21,11 +21,12 @@ Method | HTTP request | Description
 
 Get All Legacy Features
 
-### Get all legacy features.\n
+### Get all legacy features.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConfigApi()
 
@@ -50,7 +51,7 @@ This endpoint does not need any parameter.
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -61,11 +62,12 @@ No authorization required
 
 Get All Timezones
 
-### Get a list of timezones that Looker supports (e.g. useful for scheduling tasks).\n
+### Get a list of timezones that Looker supports (e.g. useful for scheduling tasks).
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConfigApi()
 
@@ -90,7 +92,7 @@ This endpoint does not need any parameter.
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -101,11 +103,12 @@ No authorization required
 
 Get Backup Configuration
 
-### Get the current Looker internal database backup configuration.\n
+### Get the current Looker internal database backup configuration.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConfigApi()
 
@@ -130,7 +133,7 @@ This endpoint does not need any parameter.
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -141,11 +144,12 @@ No authorization required
 
 Get Legacy Feature
 
-### Get information about the legacy feature with a specific id.\n
+### Get information about the legacy feature with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConfigApi()
 
@@ -176,7 +180,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -187,11 +191,12 @@ No authorization required
 
 Update Backup Configuration
 
-### Update the Looker internal database backup configuration.\n
+### Update the Looker internal database backup configuration.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConfigApi()
 
@@ -222,7 +227,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -233,11 +238,12 @@ No authorization required
 
 Update Legacy Feature
 
-### Update information about the legacy feature with a specific id.\n
+### Update information about the legacy feature with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConfigApi()
 
@@ -271,7 +277,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -282,11 +288,12 @@ No authorization required
 
 Update Whitelabel configuration
 
-### Update the whitelabel configuration\n
+### Update the whitelabel configuration
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConfigApi()
 
@@ -317,7 +324,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -328,11 +335,12 @@ No authorization required
 
 Get ApiVersion
 
-### Get information about all API versions supported by this Looker instance.\n
+### Get information about all API versions supported by this Looker instance.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConfigApi()
 
@@ -364,7 +372,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -375,11 +383,13 @@ No authorization required
 
 Get Whitelabel configuration
 
-### This feature is enabled only by special license.\n### Gets the whitelabel configuration, which includes hiding documentation links, custom favicon uploading, etc.\n
+### This feature is enabled only by special license.
+### Gets the whitelabel configuration, which includes hiding documentation links, custom favicon uploading, etc.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConfigApi()
 
@@ -411,7 +421,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

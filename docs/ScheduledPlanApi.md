@@ -22,11 +22,12 @@ Method | HTTP request | Description
 
 Get All Scheduled Plans
 
-### List all scheduled plans which belong to the requesting user\n
+### List all scheduled plans which belong to the requesting user
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ScheduledPlanApi()
 
@@ -60,7 +61,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -71,11 +72,14 @@ No authorization required
 
 Create Scheduled Plan
 
-### Schedule a Look or Dashboard by creating a scheduled plan.\n\nAdmins can create scheduled plans on behalf of other users by specifying a user id.\n
+### Schedule a Look or Dashboard by creating a scheduled plan.
+
+Admins can create scheduled plans on behalf of other users by specifying a user id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ScheduledPlanApi()
 
@@ -107,7 +111,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -118,11 +122,14 @@ No authorization required
 
 Delete Scheduled Plan
 
-### Delete the scheduled plan with the specified id.\n\nAdmins can delete other users&#39; Scheduled Plans.\n
+### Delete the scheduled plan with the specified id.
+
+Admins can delete other users&#39; Scheduled Plans.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ScheduledPlanApi()
 
@@ -153,7 +160,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -164,11 +171,14 @@ No authorization required
 
 Get Scheduled Plan
 
-### Get information about a scheduled plan.\n\nAdmins can fetch information about other users&#39; Scheduled Plans.\n
+### Get information about a scheduled plan.
+
+Admins can fetch information about other users&#39; Scheduled Plans.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ScheduledPlanApi()
 
@@ -203,7 +213,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -214,11 +224,16 @@ No authorization required
 
 Run Scheduled Plan Once
 
-### Schedule a Look or Dashboard to run once _now_ with a scheduled plan.\n\nThis can be useful for testing a Scheduled Plan before committing to a production schedule.\n\nAdmins can create scheduled plans on behalf of other users by specifying a user id.\n
+### Schedule a Look or Dashboard to run once _now_ with a scheduled plan.
+
+This can be useful for testing a Scheduled Plan before committing to a production schedule.
+
+Admins can create scheduled plans on behalf of other users by specifying a user id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ScheduledPlanApi()
 
@@ -250,7 +265,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -261,11 +276,12 @@ No authorization required
 
 Scheduled Plans for Dashboard
 
-### Get scheduled plans by using a dashboard id for the requesting user or a specified user id (with :see_schedules permission)\n
+### Get scheduled plans by using a dashboard id for the requesting user or a specified user id (with :see_schedules permission)
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ScheduledPlanApi()
 
@@ -302,7 +318,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -313,11 +329,12 @@ No authorization required
 
 Scheduled Plans for Look
 
-### Get scheduled plans by using a look id for the requesting user or a specified user id (with :see_schedules permission)\n
+### Get scheduled plans by using a look id for the requesting user or a specified user id (with :see_schedules permission)
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ScheduledPlanApi()
 
@@ -354,7 +371,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -365,11 +382,12 @@ No authorization required
 
 Scheduled Plans for LookML Dashboard
 
-### Get scheduled plans by using a LookML dashboard id for the requesting user or a specified user id (with :see_schedules permission)\n
+### Get scheduled plans by using a LookML dashboard id for the requesting user or a specified user id (with :see_schedules permission)
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ScheduledPlanApi()
 
@@ -406,7 +424,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -417,11 +435,12 @@ No authorization required
 
 Scheduled Plans for Space
 
-### Get scheduled plans by using a space id for the requesting user.\n
+### Get scheduled plans by using a space id for the requesting user.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ScheduledPlanApi()
 
@@ -456,7 +475,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -467,11 +486,14 @@ No authorization required
 
 Update Scheduled Plan
 
-### Update the scheduled plan with the specified id.\n\nAdmins can update other users&#39; Scheduled Plans.\n
+### Update the scheduled plan with the specified id.
+
+Admins can update other users&#39; Scheduled Plans.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ScheduledPlanApi()
 
@@ -505,7 +527,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

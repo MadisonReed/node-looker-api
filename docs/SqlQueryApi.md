@@ -18,7 +18,7 @@ Create a SQL Runner query.
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.SqlQueryApi()
 
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -64,7 +64,7 @@ Get a SQL Runner query.
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.SqlQueryApi()
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

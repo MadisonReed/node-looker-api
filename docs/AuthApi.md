@@ -25,11 +25,12 @@ Method | HTTP request | Description
 
 Create SAML Test Configuration
 
-### Create a SAML test configuration.\n
+### Create a SAML test configuration.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -60,7 +61,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -71,11 +72,12 @@ No authorization required
 
 Delete SAML Test Configuration
 
-### Delete a SAML test configuration.\n
+### Delete a SAML test configuration.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -106,7 +108,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -117,11 +119,14 @@ No authorization required
 
 Parse SAML IdP Url
 
-### Fetch the given url and parse it as a SAML IdP metadata document and return the result.\nNote that this requires that the url be public or at least at a location where the Looker instance\ncan fetch it without requiring any special authentication.\n
+### Fetch the given url and parse it as a SAML IdP metadata document and return the result.
+Note that this requires that the url be public or at least at a location where the Looker instance
+can fetch it without requiring any special authentication.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -152,7 +157,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: text/plain
  - **Accept**: application/json
@@ -163,11 +168,27 @@ No authorization required
 
 Get LDAP Configuration
 
-### Get the LDAP configuration.\n\nLooker can be optionally configured to authenticate users against an Active Directory or other LDAP directory server.\nLDAP setup requires coordination with an administrator of that directory server.\n\nOnly Looker administrators can read and update the LDAP configuration.\n\nConfiguring LDAP impacts authentication for all users. This configuration should be done carefully.\n\nLooker maintains a single LDAP configuration. It can be read and updated.       Updates only succeed if the new state will be valid (in the sense that all required fields are populated);       it is up to you to ensure that the configuration is appropriate and correct).\n\nLDAP is enabled or disabled for Looker using the **enabled** field.\n\nLooker will never return an **auth_password** field. That value can be set, but never retrieved.\n\nSee the [Looker LDAP docs](https://www.looker.com/docs/r/api/ldap_setup) for additional information.\n
+### Get the LDAP configuration.
+
+Looker can be optionally configured to authenticate users against an Active Directory or other LDAP directory server.
+LDAP setup requires coordination with an administrator of that directory server.
+
+Only Looker administrators can read and update the LDAP configuration.
+
+Configuring LDAP impacts authentication for all users. This configuration should be done carefully.
+
+Looker maintains a single LDAP configuration. It can be read and updated.       Updates only succeed if the new state will be valid (in the sense that all required fields are populated);       it is up to you to ensure that the configuration is appropriate and correct).
+
+LDAP is enabled or disabled for Looker using the **enabled** field.
+
+Looker will never return an **auth_password** field. That value can be set, but never retrieved.
+
+See the [Looker LDAP docs](https://www.looker.com/docs/r/api/ldap_setup) for additional information.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -192,7 +213,7 @@ This endpoint does not need any parameter.
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -203,11 +224,12 @@ No authorization required
 
 Parse SAML IdP XML
 
-### Parse the given xml as a SAML IdP metadata document and return the result.\n
+### Parse the given xml as a SAML IdP metadata document and return the result.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -238,7 +260,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: text/plain
  - **Accept**: application/json
@@ -249,11 +271,23 @@ No authorization required
 
 Get SAML Configuration
 
-### Get the SAML configuration.\n\nLooker can be optionally configured to authenticate users against a SAML authentication server.\nSAML setup requires coordination with an administrator of that server.\n\nOnly Looker administrators can read and update the SAML configuration.\n\nConfiguring SAML impacts authentication for all users. This configuration should be done carefully.\n\nLooker maintains a single SAML configuation. It can be read and updated.       Updates only succeed if the new state will be valid (in the sense that all required fields are populated);       it is up to you to ensure that the configuration is appropriate and correct).\n\nSAML is enabled or disabled for Looker using the **enabled** field.\n
+### Get the SAML configuration.
+
+Looker can be optionally configured to authenticate users against a SAML authentication server.
+SAML setup requires coordination with an administrator of that server.
+
+Only Looker administrators can read and update the SAML configuration.
+
+Configuring SAML impacts authentication for all users. This configuration should be done carefully.
+
+Looker maintains a single SAML configuation. It can be read and updated.       Updates only succeed if the new state will be valid (in the sense that all required fields are populated);       it is up to you to ensure that the configuration is appropriate and correct).
+
+SAML is enabled or disabled for Looker using the **enabled** field.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -278,7 +312,7 @@ This endpoint does not need any parameter.
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -289,11 +323,12 @@ No authorization required
 
 Get SAML Test Configuration
 
-### Get a SAML test configuration by test_slug.\n
+### Get a SAML test configuration by test_slug.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -324,7 +359,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -335,11 +370,32 @@ No authorization required
 
 Test LDAP Auth
 
-### Test the connection authentication settings for an LDAP configuration.\n\nThis tests that the connection is possible and that a &#39;server&#39; account to be used by Looker can       authenticate to the LDAP server given connection and authentication information.\n\n**connection_host**, **connection_port**, and **auth_username**, are required.       **connection_tls** and **auth_password** are optional.\n\nExample:\n```json\n{\n  \&quot;connection_host\&quot;: \&quot;ldap.example.com\&quot;,\n  \&quot;connection_port\&quot;: \&quot;636\&quot;,\n  \&quot;connection_tls\&quot;: true,\n  \&quot;auth_username\&quot;: \&quot;cn=looker,dc=example,dc=com\&quot;,\n  \&quot;auth_password\&quot;: \&quot;secret\&quot;\n}\n```\n\nLooker will never return an **auth_password**. If this request omits the **auth_password** field, then       the **auth_password** value from the active config (if present) will be used for the test.\n\nThe active LDAP settings are not modified.\n\n
+### Test the connection authentication settings for an LDAP configuration.
+
+This tests that the connection is possible and that a &#39;server&#39; account to be used by Looker can       authenticate to the LDAP server given connection and authentication information.
+
+**connection_host**, **connection_port**, and **auth_username**, are required.       **connection_tls** and **auth_password** are optional.
+
+Example:
+```json
+{
+  \&quot;connection_host\&quot;: \&quot;ldap.example.com\&quot;,
+  \&quot;connection_port\&quot;: \&quot;636\&quot;,
+  \&quot;connection_tls\&quot;: true,
+  \&quot;auth_username\&quot;: \&quot;cn=looker,dc=example,dc=com\&quot;,
+  \&quot;auth_password\&quot;: \&quot;secret\&quot;
+}
+```
+
+Looker will never return an **auth_password**. If this request omits the **auth_password** field, then       the **auth_password** value from the active config (if present) will be used for the test.
+
+The active LDAP settings are not modified.
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -370,7 +426,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -381,11 +437,29 @@ No authorization required
 
 Test LDAP Connection
 
-### Test the connection settings for an LDAP configuration.\n\nThis tests that the connection is possible given a connection_host and connection_port.\n\n**connection_host** and **connection_port** are required. **connection_tls** is optional.\n\nExample:\n```json\n{\n  \&quot;connection_host\&quot;: \&quot;ldap.example.com\&quot;,\n  \&quot;connection_port\&quot;: \&quot;636\&quot;,\n  \&quot;connection_tls\&quot;: true\n}\n```\n\nNo authentication to the LDAP server is attempted.\n\nThe active LDAP settings are not modified.\n
+### Test the connection settings for an LDAP configuration.
+
+This tests that the connection is possible given a connection_host and connection_port.
+
+**connection_host** and **connection_port** are required. **connection_tls** is optional.
+
+Example:
+```json
+{
+  \&quot;connection_host\&quot;: \&quot;ldap.example.com\&quot;,
+  \&quot;connection_port\&quot;: \&quot;636\&quot;,
+  \&quot;connection_tls\&quot;: true
+}
+```
+
+No authentication to the LDAP server is attempted.
+
+The active LDAP settings are not modified.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -416,7 +490,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -427,11 +501,21 @@ No authorization required
 
 Test LDAP User Auth
 
-### Test the user authentication settings for an LDAP configuration.\n\nThis test accepts a full LDAP configuration along with a username/password pair and attempts to       authenticate the user with the LDAP server. The configuration is validated before attempting the       authentication.\n\nLooker will never return an **auth_password**. If this request omits the **auth_password** field, then       the **auth_password** value from the active config (if present) will be used for the test.\n\n**test_ldap_user** and **test_ldap_password** are required.\n\nThe active LDAP settings are not modified.\n\n
+### Test the user authentication settings for an LDAP configuration.
+
+This test accepts a full LDAP configuration along with a username/password pair and attempts to       authenticate the user with the LDAP server. The configuration is validated before attempting the       authentication.
+
+Looker will never return an **auth_password**. If this request omits the **auth_password** field, then       the **auth_password** value from the active config (if present) will be used for the test.
+
+**test_ldap_user** and **test_ldap_password** are required.
+
+The active LDAP settings are not modified.
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -462,7 +546,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -473,11 +557,21 @@ No authorization required
 
 Test LDAP User Info
 
-### Test the user authentication settings for an LDAP configuration without authenticating the user.\n\nThis test will let you easily test the mapping for user properties and roles for any user without      needing to authenticate as that user.\n\nThis test accepts a full LDAP configuration along with a username and attempts to find the full info      for the user from the LDAP server without actually authenticating the user. So, user password is not      required.The configuration is validated before attempting to contact the server.\n\n**test_ldap_user** is required.\n\nThe active LDAP settings are not modified.\n\n
+### Test the user authentication settings for an LDAP configuration without authenticating the user.
+
+This test will let you easily test the mapping for user properties and roles for any user without      needing to authenticate as that user.
+
+This test accepts a full LDAP configuration along with a username and attempts to find the full info      for the user from the LDAP server without actually authenticating the user. So, user password is not      required.The configuration is validated before attempting to contact the server.
+
+**test_ldap_user** is required.
+
+The active LDAP settings are not modified.
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -508,7 +602,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -519,11 +613,22 @@ No authorization required
 
 Update LDAP Configuration
 
-### Update the LDAP configuration.\n\nConfiguring LDAP impacts authentication for all users. This configuration should be done carefully.\n\nOnly Looker administrators can read and update the LDAP configuration.\n\nLDAP is enabled or disabled for Looker using the **enabled** field.\n\nIt is **highly** recommended that any LDAP setting changes be tested using the APIs below before being set globally.\n\nSee the [Looker LDAP docs](https://www.looker.com/docs/r/api/ldap_setup) for additional information.\n
+### Update the LDAP configuration.
+
+Configuring LDAP impacts authentication for all users. This configuration should be done carefully.
+
+Only Looker administrators can read and update the LDAP configuration.
+
+LDAP is enabled or disabled for Looker using the **enabled** field.
+
+It is **highly** recommended that any LDAP setting changes be tested using the APIs below before being set globally.
+
+See the [Looker LDAP docs](https://www.looker.com/docs/r/api/ldap_setup) for additional information.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -554,7 +659,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -565,11 +670,20 @@ No authorization required
 
 Update SAML Configuration
 
-### Update the SAML configuration.\n\nConfiguring SAML impacts authentication for all users. This configuration should be done carefully.\n\nOnly Looker administrators can read and update the SAML configuration.\n\nSAML is enabled or disabled for Looker using the **enabled** field.\n\nIt is **highly** recommended that any SAML setting changes be tested using the APIs below before being set globally.\n
+### Update the SAML configuration.
+
+Configuring SAML impacts authentication for all users. This configuration should be done carefully.
+
+Only Looker administrators can read and update the SAML configuration.
+
+SAML is enabled or disabled for Looker using the **enabled** field.
+
+It is **highly** recommended that any SAML setting changes be tested using the APIs below before being set globally.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.AuthApi()
 
@@ -600,7 +714,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

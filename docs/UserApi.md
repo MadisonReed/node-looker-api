@@ -64,7 +64,7 @@ Get All Access Filters
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -99,7 +99,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -114,7 +114,7 @@ Get All API 3 Credentials
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -164,7 +164,7 @@ Get All Embedding Credentials
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -214,7 +214,7 @@ Get All Web Login Sessions
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -260,11 +260,12 @@ No authorization required
 
 Get All Users
 
-### Get information about all users.\n
+### Get information about all users.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -304,7 +305,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -315,11 +316,12 @@ No authorization required
 
 Create User
 
-### Create a user with the specified information.\n
+### Create a user with the specified information.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -353,7 +355,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -368,7 +370,7 @@ Create Access Filter
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -405,7 +407,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -420,7 +422,7 @@ Create API Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -457,7 +459,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -472,7 +474,7 @@ Create API 3 Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -509,7 +511,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -524,7 +526,7 @@ Create Email/Password Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -561,7 +563,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -572,11 +574,20 @@ No authorization required
 
 Create Password Reset Token
 
-### Create a password reset token.\nThis will create a cryptographically secure random password reset token for the user.\nIf the user already has a password reset token then this invalidates the old token and creates a new one.\nThe token is expressed as the &#39;password_reset_url&#39; of the user&#39;s email/password credential object.\nThis takes an optional &#39;expires&#39; param to indicate if the new token should be an expiring token.\nTokens that expire are typically used for self-service password resets for existing users.\nInvitation emails for new users typically are not set to expire.\nThe expire period is always 60 minutes when expires is enabled.\nThis method can be called with an empty body.\n
+### Create a password reset token.
+This will create a cryptographically secure random password reset token for the user.
+If the user already has a password reset token then this invalidates the old token and creates a new one.
+The token is expressed as the &#39;password_reset_url&#39; of the user&#39;s email/password credential object.
+This takes an optional &#39;expires&#39; param to indicate if the new token should be an expiring token.
+Tokens that expire are typically used for self-service password resets for existing users.
+Invitation emails for new users typically are not set to expire.
+The expire period is always 60 minutes when expires is enabled.
+This method can be called with an empty body.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -613,7 +624,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -628,7 +639,7 @@ Create Two-Factor Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -665,7 +676,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -676,11 +687,14 @@ No authorization required
 
 Delete User
 
-### Delete the user with a specific id.\n\n**DANGER** this will delete the user and all looks and other information owned by the user.\n
+### Delete the user with a specific id.
+
+**DANGER** this will delete the user and all looks and other information owned by the user.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -711,7 +725,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -726,7 +740,7 @@ Delete Access Filter
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -760,7 +774,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -771,11 +785,17 @@ No authorization required
 
 Delete User Attribute User Value
 
-### Delete a user attribute value from a user&#39;s account settings.\n\nAfter the user attribute value is deleted from the user&#39;s account settings, subsequent requests\nfor the user attribute value for this user will draw from the user&#39;s groups or the default\nvalue of the user attribute. See [Get User Attribute Values](#!/User/user_attribute_user_values) for more\ninformation about how user attribute values are resolved.\n
+### Delete a user attribute value from a user&#39;s account settings.
+
+After the user attribute value is deleted from the user&#39;s account settings, subsequent requests
+for the user attribute value for this user will draw from the user&#39;s groups or the default
+value of the user attribute. See [Get User Attribute Values](#!/User/user_attribute_user_values) for more
+information about how user attribute values are resolved.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -809,7 +829,7 @@ null (empty response body)
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -824,7 +844,7 @@ Delete API Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -855,7 +875,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -870,7 +890,7 @@ Delete API 3 Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -904,7 +924,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -919,7 +939,7 @@ Delete Email/Password Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -950,7 +970,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -965,7 +985,7 @@ Delete Embedding Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -999,7 +1019,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1014,7 +1034,7 @@ Delete Google Auth Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1045,7 +1065,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1060,7 +1080,7 @@ Delete LDAP Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1091,7 +1111,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1106,7 +1126,7 @@ Delete Looker OpenId Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1137,7 +1157,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1152,7 +1172,7 @@ Delete Saml Auth Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1183,7 +1203,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1198,7 +1218,7 @@ Delete Two-Factor Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1229,7 +1249,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1244,7 +1264,7 @@ Delete Web Login Session
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1278,7 +1298,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1289,11 +1309,12 @@ No authorization required
 
 Get Current User
 
-### Get information about the current user; i.e. the user account currently calling the API.\n
+### Get information about the current user; i.e. the user account currently calling the API.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1325,7 +1346,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1336,11 +1357,12 @@ No authorization required
 
 Search Users
 
-### Search users.\n
+### Search users.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1396,7 +1418,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1407,11 +1429,14 @@ No authorization required
 
 Search User Names
 
-### Search users where first_name OR last_name OR email matches a string.\n\nThe results will be AND&#39;d with any additional search parameters that are (optionally) included.\n
+### Search users where first_name OR last_name OR email matches a string.
+
+The results will be AND&#39;d with any additional search parameters that are (optionally) included.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1464,7 +1489,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1475,11 +1500,14 @@ No authorization required
 
 Set User Attribute User Value
 
-### Store a custom value for a user attribute in a user&#39;s account settings.\n\nPer-user user attribute values take precedence over group or default values.\n
+### Store a custom value for a user attribute in a user&#39;s account settings.
+
+Per-user user attribute values take precedence over group or default values.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1516,7 +1544,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1527,11 +1555,12 @@ No authorization required
 
 Set User Roles
 
-### Set roles of the user with a specific id.\n
+### Set roles of the user with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1569,7 +1598,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1580,11 +1609,12 @@ No authorization required
 
 Update User
 
-### Update information about the user with a specific id.\n
+### Update information about the user with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1622,7 +1652,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1637,7 +1667,7 @@ Update Access Filter
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1678,7 +1708,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1693,7 +1723,7 @@ Update Email/Password Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1731,7 +1761,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1742,11 +1772,16 @@ No authorization required
 
 Get User by Id
 
-### Get information about the user with a specific id.\n\nIf the caller is an admin or the caller is the user being specified, then full user information will\nbe returned. Otherwise, a minimal &#39;public&#39; variant of the user information will be returned. This contains\nThe user name and avatar url, but no sensitive information.\n
+### Get information about the user with a specific id.
+
+If the caller is an admin or the caller is the user being specified, then full user information will
+be returned. Otherwise, a minimal &#39;public&#39; variant of the user information will be returned. This contains
+The user name and avatar url, but no sensitive information.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1781,7 +1816,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1796,7 +1831,7 @@ Get Access Filter
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1834,7 +1869,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1845,11 +1880,26 @@ No authorization required
 
 Get User Attribute Values
 
-### Get user attribute values for a given user.\n\nReturns the values of specified user attributes (or all user attributes) for a certain user.\n\nA value for each user attribute is searched for in the following locations, in this order:\n1. in the user&#39;s account information\n1. in groups that the user is a member of\n1. the default value of the user attribute\n\nIf more than one group has a value defined for a user attribute, the group with the lowest rank wins.\n\nThe response will only include user attributes for which values were found. Use `include_unset=true` to include\nempty records for user attributes with no value.\n\nThe value of all hidden user attributes will be blank.\n
+### Get user attribute values for a given user.
+
+Returns the values of specified user attributes (or all user attributes) for a certain user.
+
+A value for each user attribute is searched for in the following locations, in this order:
+1. in the user&#39;s account information
+1. in groups that the user is a member of
+1. the default value of the user attribute
+
+If more than one group has a value defined for a user attribute, the group with the lowest rank wins.
+
+The response will only include user attributes for which values were found. Use `include_unset=true` to include
+empty records for user attributes with no value.
+
+The value of all hidden user attributes will be blank.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1890,7 +1940,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1905,7 +1955,7 @@ Get API Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1940,7 +1990,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -1955,7 +2005,7 @@ Get API 3 Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -1993,7 +2043,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -2008,7 +2058,7 @@ Get Email/Password Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -2043,7 +2093,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -2058,7 +2108,7 @@ Get Embedding Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -2096,7 +2146,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -2111,7 +2161,7 @@ Get Google Auth Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -2146,7 +2196,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -2161,7 +2211,7 @@ Get LDAP Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -2196,7 +2246,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -2211,7 +2261,7 @@ Get Looker OpenId Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -2246,7 +2296,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -2261,7 +2311,7 @@ Get Saml Auth Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -2296,7 +2346,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -2311,7 +2361,7 @@ Get Two-Factor Credential
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -2346,7 +2396,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -2357,11 +2407,39 @@ No authorization required
 
 Get User by Credential Id
 
-### Get information about the user with a credential of given type with specific id.\n\nThis is used to do things like find users by their embed external_user_id. Or, find the user with\na given api3 client_id, etc. The &#39;credential_type&#39; matchs the &#39;type&#39; name of the various credential\ntypes. It must be one of the values listed in the table below. The &#39;credential_id&#39; is your unique Id\nfor the user and is specific to each type of credential.\n\nAn example using the Ruby sdk might look like:\n\n`sdk.user_for_credential(&#39;embed&#39;, &#39;customer-4959425&#39;)`\n\nThis table shows the supported &#39;Credential Type&#39; strings. The right column is for reference; it shows\nwhich field in the given credential type is actually searched when finding a user with the supplied\n&#39;credential_id&#39;.\n\n| Credential Types | Id Field Matched |\n| ---------------- | ---------------- |\n| email            | email            |\n| google           | google_user_id   |\n| saml             | saml_user_id     |\n| ldap             | ldap_id          |\n| api              | token            |\n| api3             | client_id        |\n| embed            | external_user_id |\n| looker_openid    | email            |\n\nNOTE: &#39;api&#39; is the legacy Looker query API. The API you are currently looking at is &#39;api3&#39;.\n\n
+### Get information about the user with a credential of given type with specific id.
+
+This is used to do things like find users by their embed external_user_id. Or, find the user with
+a given api3 client_id, etc. The &#39;credential_type&#39; matchs the &#39;type&#39; name of the various credential
+types. It must be one of the values listed in the table below. The &#39;credential_id&#39; is your unique Id
+for the user and is specific to each type of credential.
+
+An example using the Ruby sdk might look like:
+
+`sdk.user_for_credential(&#39;embed&#39;, &#39;customer-4959425&#39;)`
+
+This table shows the supported &#39;Credential Type&#39; strings. The right column is for reference; it shows
+which field in the given credential type is actually searched when finding a user with the supplied
+&#39;credential_id&#39;.
+
+| Credential Types | Id Field Matched |
+| ---------------- | ---------------- |
+| email            | email            |
+| google           | google_user_id   |
+| saml             | saml_user_id     |
+| ldap             | ldap_id          |
+| api              | token            |
+| api3             | client_id        |
+| embed            | external_user_id |
+| looker_openid    | email            |
+
+NOTE: &#39;api&#39; is the legacy Looker query API. The API you are currently looking at is &#39;api3&#39;.
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -2399,7 +2477,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -2410,11 +2488,12 @@ No authorization required
 
 Get User Roles
 
-### Get information about roles of the user with a specific id.\n
+### Get information about roles of the user with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -2451,7 +2530,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -2466,7 +2545,7 @@ Get Web Login Session
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.UserApi()
 
@@ -2504,7 +2583,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

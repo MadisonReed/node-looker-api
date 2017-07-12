@@ -31,7 +31,6 @@
   var exports = function(apiClient) {
     this.apiClient = apiClient || ApiClient.instance;
 
-
     /**
      * Callback function to receive the result of the login operation.
      * @callback module:api/ApiAuthApi~loginCallback
@@ -70,10 +69,22 @@
       var accepts = ['application/json'];
       var returnType = AccessToken;
 
+      var apiClient = this.apiClient;
       return this.apiClient.callApi(
         '/login', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
+        //
+        //new function(error, loginData) {
+        //  if (error) {
+        //    throw new Error('Login error: ' + error);
+        //  } else {
+        //    apiClient.authentications = {};
+        //    apiClient.authentications["oauth2"] = {"type": "oauth2", "accessToken": loginData.access_token};
+        //  }
+        //
+        //  callback(error, loginData);
+        //}
       );
     }
 
@@ -150,7 +161,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['oauth2'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = 'String';

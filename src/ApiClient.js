@@ -28,12 +28,14 @@
    * @class
    */
   var exports = function() {
+
     /**
      * The base URL against which to resolve every API call's (relative) path.
      * @type {String}
-     * @default https://madisonreed.looker.com:19999/api/3.0
+     * @default https://instance_name.looker.com:19999/api/3.0
      */
-    this.basePath = 'https://madisonreed.looker.com:19999/api/3.0'.replace(/\/+$/, '');
+    this._basePath = 'https://INSTANCE_NAME.looker.com:19999/api/3.0'.replace(/\/+$/, '');
+    this.basePath =  this._basePath;
 
     /**
      * The authentication methods to be included for all API calls.
@@ -56,6 +58,10 @@
      */
     this.timeout = 60000;
   };
+
+  exports.prototype.setInstanceName = function(name) {
+    this.basePath = this._basePath.replace('INSTANCE_NAME',name);
+  }
 
   /**
    * Returns a string representation for an actual parameter.

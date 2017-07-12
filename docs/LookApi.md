@@ -23,7 +23,7 @@ Get All Looks
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookApi()
 
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -70,7 +70,7 @@ Create Look
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookApi()
 
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -119,7 +119,7 @@ Delete Look
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookApi()
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -161,11 +161,15 @@ No authorization required
 
 Get Look
 
-### Get a Look.\n\nReturn detailed information about the Look and its associated Query.\n\n
+### Get a Look.
+
+Return detailed information about the Look and its associated Query.
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookApi()
 
@@ -200,7 +204,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -211,11 +215,31 @@ No authorization required
 
 Run Look
 
-### Run a Look.\n\nRuns a given look&#39;s query and returns the results in the requested format.\n\nSuported formats:\n\n| result_format | Description\n| :-----------: | :--- |\n| json | Plain json\n| json_detail | Row data plus metadata describing the fields, pivots, table calcs, and other aspects of the query\n| csv | Comma separated values with a header\n| txt | Tab separated values with a header\n| html | Simple html\n| md | Simple markdown\n| xlsx | MS Excel spreadsheet\n| sql | Returns the generated SQL rather than running the query\n| png | A PNG image of the visualization of the query\n| jpg | A JPG image of the visualization of the query\n\n\n
+### Run a Look.
+
+Runs a given look&#39;s query and returns the results in the requested format.
+
+Suported formats:
+
+| result_format | Description
+| :-----------: | :--- |
+| json | Plain json
+| json_detail | Row data plus metadata describing the fields, pivots, table calcs, and other aspects of the query
+| csv | Comma separated values with a header
+| txt | Tab separated values with a header
+| html | Simple html
+| md | Simple markdown
+| xlsx | MS Excel spreadsheet
+| sql | Returns the generated SQL rather than running the query
+| png | A PNG image of the visualization of the query
+| jpg | A JPG image of the visualization of the query
+
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookApi()
 
@@ -275,7 +299,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: text, application/json, image/png, image/jpg
@@ -290,7 +314,7 @@ Search looks.
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookApi()
 
@@ -344,7 +368,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -359,7 +383,7 @@ Update Look
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookApi()
 
@@ -397,7 +421,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

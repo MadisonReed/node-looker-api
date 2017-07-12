@@ -32,11 +32,12 @@ Method | HTTP request | Description
 
 Get All Model Sets
 
-### Get information about all model sets.\n
+### Get information about all model sets.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -68,7 +69,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -79,11 +80,12 @@ No authorization required
 
 Get All Permission Sets
 
-### Get information about all permission sets.\n
+### Get information about all permission sets.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -115,7 +117,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -126,11 +128,12 @@ No authorization required
 
 Get All Permissions
 
-### Get all supported permissions.\n
+### Get all supported permissions.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -155,7 +158,7 @@ This endpoint does not need any parameter.
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -166,11 +169,12 @@ No authorization required
 
 Get All Roles
 
-### Get information about all roles.\n
+### Get information about all roles.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -204,7 +208,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -215,11 +219,12 @@ No authorization required
 
 Create Model Set
 
-### Create a model set with the specified information. Model sets are used by Roles.\n
+### Create a model set with the specified information. Model sets are used by Roles.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -251,7 +256,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -262,11 +267,12 @@ No authorization required
 
 Create Permission Set
 
-### Create a permission set with the specified information. Permission sets are used by Roles.\n
+### Create a permission set with the specified information. Permission sets are used by Roles.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -298,7 +304,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -309,11 +315,12 @@ No authorization required
 
 Create Role
 
-### Create a role with the specified information.\n
+### Create a role with the specified information.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -345,7 +352,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -356,11 +363,12 @@ No authorization required
 
 Delete Model Set
 
-### Delete the model set with a specific id.\n
+### Delete the model set with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -391,7 +399,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -402,11 +410,12 @@ No authorization required
 
 Delete Permission Set
 
-### Delete the permission set with a specific id.\n
+### Delete the permission set with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -437,7 +446,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -448,11 +457,12 @@ No authorization required
 
 Delete Role
 
-### Delete the role with a specific id.\n
+### Delete the role with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -483,7 +493,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -494,11 +504,12 @@ No authorization required
 
 Get Model Set
 
-### Get information about the model set with a specific id.\n
+### Get information about the model set with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -533,7 +544,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -544,11 +555,12 @@ No authorization required
 
 Get Permission Set
 
-### Get information about the permission set with a specific id.\n
+### Get information about the permission set with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -583,7 +595,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -594,11 +606,12 @@ No authorization required
 
 Get Role
 
-### Get information about the role with a specific id.\n
+### Get information about the role with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -629,7 +642,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -640,11 +653,12 @@ No authorization required
 
 Get Role Groups
 
-### Get information about all the groups with the role that has a specific id.\n
+### Get information about all the groups with the role that has a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -679,7 +693,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -690,11 +704,12 @@ No authorization required
 
 Get Role Users
 
-### Get information about all the users with the role that has a specific id.\n
+### Get information about all the users with the role that has a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -731,7 +746,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -742,11 +757,12 @@ No authorization required
 
 Update Role Groups
 
-### Set all groups for a role, removing all existing group associations from that role.\n
+### Set all groups for a role, removing all existing group associations from that role.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -780,7 +796,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -791,11 +807,12 @@ No authorization required
 
 Update Role Users
 
-### Set all the users of the role with a specific id.\n
+### Set all the users of the role with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -829,7 +846,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -840,11 +857,12 @@ No authorization required
 
 Update Model Set
 
-### Update information about the model set with a specific id.\n
+### Update information about the model set with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -878,7 +896,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -889,11 +907,12 @@ No authorization required
 
 Update Permission Set
 
-### Update information about the permission set with a specific id.\n
+### Update information about the permission set with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -927,7 +946,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -938,11 +957,12 @@ No authorization required
 
 Update Role
 
-### Update information about the role with a specific id.\n
+### Update information about the role with a specific id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RoleApi()
 
@@ -976,7 +996,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

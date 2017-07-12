@@ -14,11 +14,14 @@ Method | HTTP request | Description
 
 Get Session
 
-### Get API Session \n\nReturns information about the current API session, such as which workspace is selected for the session.\n
+### Get API Session 
+
+Returns information about the current API session, such as which workspace is selected for the session.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.SessionApi()
 
@@ -43,7 +46,7 @@ This endpoint does not need any parameter.
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -54,11 +57,31 @@ No authorization required
 
 Update Session
 
-### Update API Session \n\n#### API Session Workspace\n\nYou can use this endpoint to change the active workspace for the current API session. \n\nOnly one workspace can be active in a session. The active workspace can be changed\nany number of times in a session.\n\nThe default workspace for API sessions is the \&quot;production\&quot; workspace.\n\nAll Looker APIs that use projects or lookml models (such as running queries) will \nuse the version of project and model files defined by this workspace for the lifetime of the \ncurrent API session or until the session workspace is changed again. \n\nAn API session has the same lifetime as the access_token used to authenticate API requests. Each successful\nAPI login generates a new access_token and a new API session. \n\nIf your Looker API client application needs to work in a dev workspace across multiple\nAPI sessions, be sure to select the dev workspace after each login.\n
+### Update API Session 
+
+#### API Session Workspace
+
+You can use this endpoint to change the active workspace for the current API session. 
+
+Only one workspace can be active in a session. The active workspace can be changed
+any number of times in a session.
+
+The default workspace for API sessions is the \&quot;production\&quot; workspace.
+
+All Looker APIs that use projects or lookml models (such as running queries) will 
+use the version of project and model files defined by this workspace for the lifetime of the 
+current API session or until the session workspace is changed again. 
+
+An API session has the same lifetime as the access_token used to authenticate API requests. Each successful
+API login generates a new access_token and a new API session. 
+
+If your Looker API client application needs to work in a dev workspace across multiple
+API sessions, be sure to select the dev workspace after each login.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.SessionApi()
 
@@ -89,7 +112,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

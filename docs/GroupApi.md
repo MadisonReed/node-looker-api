@@ -25,11 +25,12 @@ Method | HTTP request | Description
 
 Add a Group to Group
 
-### Adds a new group to a group.\n
+### Adds a new group to a group.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -64,7 +65,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -75,11 +76,12 @@ No authorization required
 
 Add a User to Group
 
-### Adds a new user to a group.\n
+### Adds a new user to a group.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -114,7 +116,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -125,11 +127,12 @@ No authorization required
 
 Get All Groups in Group
 
-### Get information about all the groups in a group\n
+### Get information about all the groups in a group
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -164,7 +167,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -175,11 +178,12 @@ No authorization required
 
 Get All Users in Group
 
-### Get information about all the users directly included in a group.\n
+### Get information about all the users directly included in a group.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -220,7 +224,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -231,11 +235,12 @@ No authorization required
 
 Get All Groups
 
-### Get information about all groups.\n
+### Get information about all groups.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -279,7 +284,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -290,11 +295,12 @@ No authorization required
 
 Create Group
 
-### Creates a new group (admin only).\n
+### Creates a new group (admin only).
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -328,7 +334,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -339,11 +345,12 @@ No authorization required
 
 Delete Group
 
-### Deletes a group (admin only).\n
+### Deletes a group (admin only).
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -374,7 +381,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -385,11 +392,12 @@ No authorization required
 
 Deletes a Group from Group
 
-### Removes a group from a group.\n
+### Removes a group from a group.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -423,7 +431,7 @@ null (empty response body)
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -434,11 +442,12 @@ No authorization required
 
 Remove a User from Group
 
-### Removes a user from a group.\n
+### Removes a user from a group.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -472,7 +481,7 @@ null (empty response body)
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -483,11 +492,12 @@ No authorization required
 
 Delete User Attribute Group Value
 
-### Remove a user attribute value from a group.\n
+### Remove a user attribute value from a group.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -521,7 +531,7 @@ null (empty response body)
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -532,11 +542,12 @@ No authorization required
 
 Get Group
 
-### Get information about a group.\n
+### Get information about a group.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -571,7 +582,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -586,7 +597,7 @@ Update Group
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -624,7 +635,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -635,11 +646,14 @@ No authorization required
 
 Set User Attribute Group Value
 
-### Set the value of a user attribute for a group.\n\nFor information about how user attribute values are calculated, see [Set User Attribute Group Values](#!/UserAttribute/set_user_attribute_group_values).\n
+### Set the value of a user attribute for a group.
+
+For information about how user attribute values are calculated, see [Set User Attribute Group Values](#!/UserAttribute/set_user_attribute_group_values).
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.GroupApi()
 
@@ -676,7 +690,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

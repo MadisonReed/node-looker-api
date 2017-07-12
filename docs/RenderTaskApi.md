@@ -18,11 +18,17 @@ Method | HTTP request | Description
 
 Create Dashboard Render Task
 
-### Create a new task to render a dashboard to a document or image.\n\nReturns a render task object.\nTo check the status of a render task, pass the render_task.id to [Get Render Task](#!/RenderTask/get_render_task).\nOnce the render task is complete, you can download the resulting document or image using [Get Render Task Results](#!/RenderTask/get_render_task_results).\n\n
+### Create a new task to render a dashboard to a document or image.
+
+Returns a render task object.
+To check the status of a render task, pass the render_task.id to [Get Render Task](#!/RenderTask/get_render_task).
+Once the render task is complete, you can download the resulting document or image using [Get Render Task Results](#!/RenderTask/get_render_task_results).
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RenderTaskApi()
 
@@ -69,7 +75,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -80,11 +86,17 @@ No authorization required
 
 Create Look Render Task
 
-### Create a new task to render a look to an image.\n\nReturns a render task object.\nTo check the status of a render task, pass the render_task.id to [Get Render Task](#!/RenderTask/get_render_task).\nOnce the render task is complete, you can download the resulting document or image using [Get Render Task Results](#!/RenderTask/get_render_task_results).\n\n
+### Create a new task to render a look to an image.
+
+Returns a render task object.
+To check the status of a render task, pass the render_task.id to [Get Render Task](#!/RenderTask/get_render_task).
+Once the render task is complete, you can download the resulting document or image using [Get Render Task Results](#!/RenderTask/get_render_task_results).
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RenderTaskApi()
 
@@ -128,7 +140,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -139,11 +151,17 @@ No authorization required
 
 Create Lookml Dashboard Render Task
 
-### Create a new task to render a lookml dashboard to a document or image.\n\nReturns a render task object.\nTo check the status of a render task, pass the render_task.id to [Get Render Task](#!/RenderTask/get_render_task).\nOnce the render task is complete, you can download the resulting document or image using [Get Render Task Results](#!/RenderTask/get_render_task_results).\n\n
+### Create a new task to render a lookml dashboard to a document or image.
+
+Returns a render task object.
+To check the status of a render task, pass the render_task.id to [Get Render Task](#!/RenderTask/get_render_task).
+Once the render task is complete, you can download the resulting document or image using [Get Render Task Results](#!/RenderTask/get_render_task_results).
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RenderTaskApi()
 
@@ -190,7 +208,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -201,11 +219,17 @@ No authorization required
 
 Create Query Render Task
 
-### Create a new task to render an existing query to an image.\n\nReturns a render task object.\nTo check the status of a render task, pass the render_task.id to [Get Render Task](#!/RenderTask/get_render_task).\nOnce the render task is complete, you can download the resulting document or image using [Get Render Task Results](#!/RenderTask/get_render_task_results).\n\n
+### Create a new task to render an existing query to an image.
+
+Returns a render task object.
+To check the status of a render task, pass the render_task.id to [Get Render Task](#!/RenderTask/get_render_task).
+Once the render task is complete, you can download the resulting document or image using [Get Render Task Results](#!/RenderTask/get_render_task_results).
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RenderTaskApi()
 
@@ -249,7 +273,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -260,11 +284,17 @@ No authorization required
 
 Get Render Task
 
-### Get information about a render task.\n\nReturns a render task object.\nTo check the status of a render task, pass the render_task.id to [Get Render Task](#!/RenderTask/get_render_task).\nOnce the render task is complete, you can download the resulting document or image using [Get Render Task Results](#!/RenderTask/get_render_task_results).\n\n
+### Get information about a render task.
+
+Returns a render task object.
+To check the status of a render task, pass the render_task.id to [Get Render Task](#!/RenderTask/get_render_task).
+Once the render task is complete, you can download the resulting document or image using [Get Render Task Results](#!/RenderTask/get_render_task_results).
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RenderTaskApi()
 
@@ -299,7 +329,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -310,11 +340,14 @@ No authorization required
 
 Render Task Results
 
-### Get the document or image produced by a completed render task.\n\nReturns `102 Processing` if the render task has not completed.\n
+### Get the document or image produced by a completed render task.
+
+Returns `102 Processing` if the render task has not completed.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RenderTaskApi()
 
@@ -345,7 +378,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: image/jpeg, image/png, application/pdf

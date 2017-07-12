@@ -18,11 +18,12 @@ Method | HTTP request | Description
 
 Get All LookML Models
 
-### Get information about all lookml models.\n
+### Get information about all lookml models.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookmlModelApi()
 
@@ -54,7 +55,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -65,11 +66,12 @@ No authorization required
 
 Create LookML Model
 
-### Create a lookml model using the specified configuration.\n
+### Create a lookml model using the specified configuration.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookmlModelApi()
 
@@ -101,7 +103,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -112,11 +114,12 @@ No authorization required
 
 Delete LookML Model
 
-### Delete a lookml model.\n
+### Delete a lookml model.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookmlModelApi()
 
@@ -147,7 +150,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -158,11 +161,12 @@ No authorization required
 
 Get LookML Model
 
-### Get information about a lookml model.\n
+### Get information about a lookml model.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookmlModelApi()
 
@@ -197,7 +201,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -208,11 +212,12 @@ No authorization required
 
 Get LookML Model Explore
 
-### Get information about a lookml model explore.\n
+### Get information about a lookml model explore.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookmlModelApi()
 
@@ -250,7 +255,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -261,11 +266,12 @@ No authorization required
 
 Update LookML Model
 
-### Update a lookml model using the specified configuration.\n
+### Update a lookml model using the specified configuration.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.LookmlModelApi()
 
@@ -299,7 +305,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

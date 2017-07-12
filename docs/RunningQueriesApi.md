@@ -14,11 +14,12 @@ Method | HTTP request | Description
 
 Get All Running Queries
 
-Get information about all running queries.\n
+Get information about all running queries.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RunningQueriesApi()
 
@@ -43,7 +44,7 @@ This endpoint does not need any parameter.
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -54,11 +55,12 @@ No authorization required
 
 Kill Running Query
 
-Kill a query with a specific query_task_id.\n
+Kill a query with a specific query_task_id.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.RunningQueriesApi()
 
@@ -89,7 +91,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

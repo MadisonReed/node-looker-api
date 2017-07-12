@@ -22,11 +22,12 @@ Method | HTTP request | Description
 
 Get All Homepage Items
 
-### Get information about all homepage items.\n
+### Get information about all homepage items.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.HomepageApi()
 
@@ -62,7 +63,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -73,11 +74,12 @@ No authorization required
 
 Get All Homepage sections
 
-### Get information about all homepage sections.\n
+### Get information about all homepage sections.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.HomepageApi()
 
@@ -111,7 +113,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -122,11 +124,12 @@ No authorization required
 
 Create Homepage Item
 
-### Create a new homepage item.\n
+### Create a new homepage item.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.HomepageApi()
 
@@ -160,7 +163,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -171,11 +174,12 @@ No authorization required
 
 Create Homepage section
 
-### Create a new homepage section.\n
+### Create a new homepage section.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.HomepageApi()
 
@@ -209,7 +213,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -220,11 +224,12 @@ No authorization required
 
 Delete Homepage Item
 
-### Delete a homepage item.\n
+### Delete a homepage item.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.HomepageApi()
 
@@ -255,7 +260,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -266,11 +271,12 @@ No authorization required
 
 Delete Homepage section
 
-### Delete a homepage section.\n
+### Delete a homepage section.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.HomepageApi()
 
@@ -301,7 +307,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -312,11 +318,12 @@ No authorization required
 
 Get Homepage Item
 
-### Get information about a homepage item.\n
+### Get information about a homepage item.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.HomepageApi()
 
@@ -351,7 +358,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -362,11 +369,12 @@ No authorization required
 
 Get Homepage section
 
-### Get information about a homepage section.\n
+### Get information about a homepage section.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.HomepageApi()
 
@@ -401,7 +409,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -412,11 +420,12 @@ No authorization required
 
 Update Homepage Item
 
-### Update a homepage item definition.\n
+### Update a homepage item definition.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.HomepageApi()
 
@@ -454,7 +463,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -465,11 +474,12 @@ No authorization required
 
 Update Homepage section
 
-### Update a homepage section definition.\n
+### Update a homepage section definition.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.HomepageApi()
 
@@ -507,7 +517,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

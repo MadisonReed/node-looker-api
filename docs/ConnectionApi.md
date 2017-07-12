@@ -20,11 +20,12 @@ Method | HTTP request | Description
 
 Get All Connections
 
-### Get information about all connections.\n
+### Get information about all connections.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConnectionApi()
 
@@ -56,7 +57,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -67,11 +68,12 @@ No authorization required
 
 Get All Dialect Infos
 
-### Get information about all dialects.\n
+### Get information about all dialects.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConnectionApi()
 
@@ -103,7 +105,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -114,11 +116,12 @@ No authorization required
 
 Get Connection
 
-### Get information about a connection.\n
+### Get information about a connection.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConnectionApi()
 
@@ -153,7 +156,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -164,11 +167,12 @@ No authorization required
 
 Create Connection
 
-### Create a connection using the specified configuration.\n
+### Create a connection using the specified configuration.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConnectionApi()
 
@@ -200,7 +204,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -211,11 +215,12 @@ No authorization required
 
 Delete Connection
 
-### Delete a connection.\n
+### Delete a connection.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConnectionApi()
 
@@ -246,7 +251,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -257,11 +262,17 @@ No authorization required
 
 Test Connection
 
-### Test an existing connection.\n\nNote that a connection&#39;s &#39;dialect&#39; property has a &#39;connection_tests&#39; property that lists the\nspecific types of tests that the connection supports.\n\nUnsupported tests in the request will be ignored.\n
+### Test an existing connection.
+
+Note that a connection&#39;s &#39;dialect&#39; property has a &#39;connection_tests&#39; property that lists the
+specific types of tests that the connection supports.
+
+Unsupported tests in the request will be ignored.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConnectionApi()
 
@@ -296,7 +307,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -307,11 +318,17 @@ No authorization required
 
 Test Connection Configuration
 
-### Test a connection configuration.\n\nNote that a connection&#39;s &#39;dialect&#39; property has a &#39;connection_tests&#39; property that lists the\nspecific types of tests that the connection supports.\n\nUnsupported tests in the request will be ignored.\n
+### Test a connection configuration.
+
+Note that a connection&#39;s &#39;dialect&#39; property has a &#39;connection_tests&#39; property that lists the
+specific types of tests that the connection supports.
+
+Unsupported tests in the request will be ignored.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConnectionApi()
 
@@ -345,7 +362,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -356,11 +373,12 @@ No authorization required
 
 Update Connection
 
-### Update a connection using the specified configuration.\n
+### Update a connection using the specified configuration.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ConnectionApi()
 
@@ -394,7 +412,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

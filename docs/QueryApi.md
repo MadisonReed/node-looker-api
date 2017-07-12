@@ -22,11 +22,20 @@ Method | HTTP request | Description
 
 Create Query
 
-### Create a query.\n\nThis allows you to create a new query that you can later run. Looker queries are immutable once created\nand are not deleted. If you create a query that is exactly like an existing query then the existing query\nwill be returned and no new query will be created. Whether a new query is created or not, you can use\nthe &#39;id&#39; in the returned query with the &#39;run&#39; method.\n\nThe query parameters are passed as json in the body of the request.\n\n
+### Create a query.
+
+This allows you to create a new query that you can later run. Looker queries are immutable once created
+and are not deleted. If you create a query that is exactly like an existing query then the existing query
+will be returned and no new query will be created. Whether a new query is created or not, you can use
+the &#39;id&#39; in the returned query with the &#39;run&#39; method.
+
+The query parameters are passed as json in the body of the request.
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.QueryApi()
 
@@ -60,7 +69,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -71,11 +80,15 @@ No authorization required
 
 Run Query Async
 
-### Run a saved query asynchronously.\n\nRuns a previously created query asynchronously. Returns a Query Task ID\nwhich can be used to fetch the results from the Query Tasks results endpoint.\n
+### Run a saved query asynchronously.
+
+Runs a previously created query asynchronously. Returns a Query Task ID
+which can be used to fetch the results from the Query Tasks results endpoint.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.QueryApi()
 
@@ -134,7 +147,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -145,11 +158,29 @@ No authorization required
 
 Get Query
 
-### Get a previously created query by id.\n\nA Looker query object includes the various parameters that define a database query that has been run or\ncould be run in the future. These parameters include: model, view, fields, filters, pivots, etc.\nQuery *results* are not part of the query object.\n\nQuery objects are unique and immutable. Query objects are created automatically in Looker as users explore data.\nLooker does not delete them; they become part of the query history. When asked to create a query for\nany given set of parameters, Looker will first try to find an existing query object with matching\nparameters and will only create a new object when an appropriate object can not be found.\n\nThis &#39;get&#39; method is used to get the details about a query for a given id. See the other methods here\nto &#39;create&#39; and &#39;run&#39; queries.\n\nNote that some fields like &#39;filter_config&#39; and &#39;vis_config&#39; etc are specific to how the Looker UI\nbuilds queries and visualizations and are not generally useful for API use. They are not required when\ncreating new queries and can usually just be ignored.\n\n
+### Get a previously created query by id.
+
+A Looker query object includes the various parameters that define a database query that has been run or
+could be run in the future. These parameters include: model, view, fields, filters, pivots, etc.
+Query *results* are not part of the query object.
+
+Query objects are unique and immutable. Query objects are created automatically in Looker as users explore data.
+Looker does not delete them; they become part of the query history. When asked to create a query for
+any given set of parameters, Looker will first try to find an existing query object with matching
+parameters and will only create a new object when an appropriate object can not be found.
+
+This &#39;get&#39; method is used to get the details about a query for a given id. See the other methods here
+to &#39;create&#39; and &#39;run&#39; queries.
+
+Note that some fields like &#39;filter_config&#39; and &#39;vis_config&#39; etc are specific to how the Looker UI
+builds queries and visualizations and are not generally useful for API use. They are not required when
+creating new queries and can usually just be ignored.
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.QueryApi()
 
@@ -184,7 +215,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -195,11 +226,28 @@ No authorization required
 
 Get Query for Slug
 
-### Get the query for a given query slug.\n\nThis returns the query for the &#39;slug&#39; in a query share URL.\n\nThe &#39;slug&#39; is a randomly chosen short string that is used as an alternative to the query&#39;s id value\nfor use in URLs etc. This method exists as a convenience to help you use the API to &#39;find&#39; queries that\nhave been created using the Looker UI.\n\nYou can use the Looker explore page to build a query and then choose the &#39;Share&#39; option to\nshow the share url for the query. Share urls generally look something like &#39;https://looker.yourcompany/x/vwGSbfc&#39;.\nThe trailing &#39;vwGSbfc&#39; is the share slug. You can pass that string to this api method to get details about the query.\nThose details include the &#39;id&#39; that you can use to run the query. Or, you can copy the query body\n(perhaps with your own modification) and use that as the basis to make/run new queries.\n\nThis will also work with slugs from Looker explore urls like\n&#39;https://looker.yourcompany/explore/ecommerce/orders?qid=aogBgL6o3cKK1jN3RoZl5s&#39;. In this case\n&#39;aogBgL6o3cKK1jN3RoZl5s&#39; is the slug.\n
+### Get the query for a given query slug.
+
+This returns the query for the &#39;slug&#39; in a query share URL.
+
+The &#39;slug&#39; is a randomly chosen short string that is used as an alternative to the query&#39;s id value
+for use in URLs etc. This method exists as a convenience to help you use the API to &#39;find&#39; queries that
+have been created using the Looker UI.
+
+You can use the Looker explore page to build a query and then choose the &#39;Share&#39; option to
+show the share url for the query. Share urls generally look something like &#39;https://looker.yourcompany/x/vwGSbfc&#39;.
+The trailing &#39;vwGSbfc&#39; is the share slug. You can pass that string to this api method to get details about the query.
+Those details include the &#39;id&#39; that you can use to run the query. Or, you can copy the query body
+(perhaps with your own modification) and use that as the basis to make/run new queries.
+
+This will also work with slugs from Looker explore urls like
+&#39;https://looker.yourcompany/explore/ecommerce/orders?qid=aogBgL6o3cKK1jN3RoZl5s&#39;. In this case
+&#39;aogBgL6o3cKK1jN3RoZl5s&#39; is the slug.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.QueryApi()
 
@@ -234,7 +282,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -245,11 +293,15 @@ No authorization required
 
 Get Async Query Info
 
-Returns information about a Query Task.\n\nQuery Tasks are generated by running queries asynchronously. They are represented by a GUID returned\nfrom one of the async query endpoints.\n
+Returns information about a Query Task.
+
+Query Tasks are generated by running queries asynchronously. They are represented by a GUID returned
+from one of the async query endpoints.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.QueryApi()
 
@@ -284,7 +336,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -295,11 +347,16 @@ No authorization required
 
 Get Multiple Async Query Results
 
-Fetch the results of multiple async Query Tasks in one response.\n\nQuery Tasks that are not ready will be skipped and will not appear in the response.\nQuery Tasks whose results have expired will have a status of &#39;expired&#39;.\nIf the user making the API request does not have sufficient privileges to view a Query Task result, the result will have a status of &#39;missing&#39;\n
+Fetch the results of multiple async Query Tasks in one response.
+
+Query Tasks that are not ready will be skipped and will not appear in the response.
+Query Tasks whose results have expired will have a status of &#39;expired&#39;.
+If the user making the API request does not have sufficient privileges to view a Query Task result, the result will have a status of &#39;missing&#39;
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.QueryApi()
 
@@ -330,7 +387,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -341,11 +398,12 @@ No authorization required
 
 Get Async Query Results
 
-Returns the results of an async Query Task if the query has completed.\n
+Returns the results of an async Query Task if the query has completed.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.QueryApi()
 
@@ -376,7 +434,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: text, application/json
@@ -387,11 +445,63 @@ No authorization required
 
 Run Inline Query
 
-### Run the query that is specified inline in the posted body.\n\nThis allows running a query as defined in json in the posted body. This combines\nthe two actions of posting &amp; running a query into one step.\n\nHere is an example body in json:\n```\n{\n  \&quot;model\&quot;:\&quot;thelook\&quot;,\n  \&quot;view\&quot;:\&quot;inventory_items\&quot;,\n  \&quot;fields\&quot;:[\&quot;category.name\&quot;,\&quot;inventory_items.days_in_inventory_tier\&quot;,\&quot;products.count\&quot;],\n  \&quot;filters\&quot;:{\&quot;category.name\&quot;:\&quot;socks\&quot;},\n  \&quot;sorts\&quot;:[\&quot;products.count desc 0\&quot;],\n  \&quot;limit\&quot;:\&quot;500\&quot;,\n  \&quot;query_timezone\&quot;:\&quot;America/Los_Angeles\&quot;\n}\n```\n\nWhen using the Ruby SDK this would be passed as a Ruby hash like:\n```\n{\n :model=&gt;\&quot;thelook\&quot;,\n :view=&gt;\&quot;inventory_items\&quot;,\n :fields=&gt;\n  [\&quot;category.name\&quot;,\n   \&quot;inventory_items.days_in_inventory_tier\&quot;,\n   \&quot;products.count\&quot;],\n :filters=&gt;{:\&quot;category.name\&quot;=&gt;\&quot;socks\&quot;},\n :sorts=&gt;[\&quot;products.count desc 0\&quot;],\n :limit=&gt;\&quot;500\&quot;,\n :query_timezone=&gt;\&quot;America/Los_Angeles\&quot;,\n}\n```\n\nThis will return the result of running the query in the format specified by the &#39;result_format&#39; parameter.\n\nSuported formats:\n\n| result_format | Description\n| :-----------: | :--- |\n| json | Plain json\n| json_detail | Row data plus metadata describing the fields, pivots, table calcs, and other aspects of the query\n| csv | Comma separated values with a header\n| txt | Tab separated values with a header\n| html | Simple html\n| md | Simple markdown\n| xlsx | MS Excel spreadsheet\n| sql | Returns the generated SQL rather than running the query\n| png | A PNG image of the visualization of the query\n| jpg | A JPG image of the visualization of the query\n\n\n
+### Run the query that is specified inline in the posted body.
+
+This allows running a query as defined in json in the posted body. This combines
+the two actions of posting &amp; running a query into one step.
+
+Here is an example body in json:
+```
+{
+  \&quot;model\&quot;:\&quot;thelook\&quot;,
+  \&quot;view\&quot;:\&quot;inventory_items\&quot;,
+  \&quot;fields\&quot;:[\&quot;category.name\&quot;,\&quot;inventory_items.days_in_inventory_tier\&quot;,\&quot;products.count\&quot;],
+  \&quot;filters\&quot;:{\&quot;category.name\&quot;:\&quot;socks\&quot;},
+  \&quot;sorts\&quot;:[\&quot;products.count desc 0\&quot;],
+  \&quot;limit\&quot;:\&quot;500\&quot;,
+  \&quot;query_timezone\&quot;:\&quot;America/Los_Angeles\&quot;
+}
+```
+
+When using the Ruby SDK this would be passed as a Ruby hash like:
+```
+{
+ :model=&gt;\&quot;thelook\&quot;,
+ :view=&gt;\&quot;inventory_items\&quot;,
+ :fields=&gt;
+  [\&quot;category.name\&quot;,
+   \&quot;inventory_items.days_in_inventory_tier\&quot;,
+   \&quot;products.count\&quot;],
+ :filters=&gt;{:\&quot;category.name\&quot;=&gt;\&quot;socks\&quot;},
+ :sorts=&gt;[\&quot;products.count desc 0\&quot;],
+ :limit=&gt;\&quot;500\&quot;,
+ :query_timezone=&gt;\&quot;America/Los_Angeles\&quot;,
+}
+```
+
+This will return the result of running the query in the format specified by the &#39;result_format&#39; parameter.
+
+Suported formats:
+
+| result_format | Description
+| :-----------: | :--- |
+| json | Plain json
+| json_detail | Row data plus metadata describing the fields, pivots, table calcs, and other aspects of the query
+| csv | Comma separated values with a header
+| txt | Tab separated values with a header
+| html | Simple html
+| md | Simple markdown
+| xlsx | MS Excel spreadsheet
+| sql | Returns the generated SQL rather than running the query
+| png | A PNG image of the visualization of the query
+| jpg | A JPG image of the visualization of the query
+
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.QueryApi()
 
@@ -451,7 +561,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: text, application/json, image/png, image/jpg
@@ -462,11 +572,34 @@ No authorization required
 
 Run Query
 
-### Run a saved query.\n\nThis runs a previously saved query. You can use this on a query that was generated in the Looker UI\nor one that you have explicitly created using the API. You can also use a query &#39;id&#39; from a saved &#39;Look&#39;.\n\nThe &#39;result_format&#39; parameter specifies the desired structure and format of the response.\n\nSuported formats:\n\n| result_format | Description\n| :-----------: | :--- |\n| json | Plain json\n| json_detail | Row data plus metadata describing the fields, pivots, table calcs, and other aspects of the query\n| csv | Comma separated values with a header\n| txt | Tab separated values with a header\n| html | Simple html\n| md | Simple markdown\n| xlsx | MS Excel spreadsheet\n| sql | Returns the generated SQL rather than running the query\n| png | A PNG image of the visualization of the query\n| jpg | A JPG image of the visualization of the query\n\n\n
+### Run a saved query.
+
+This runs a previously saved query. You can use this on a query that was generated in the Looker UI
+or one that you have explicitly created using the API. You can also use a query &#39;id&#39; from a saved &#39;Look&#39;.
+
+The &#39;result_format&#39; parameter specifies the desired structure and format of the response.
+
+Suported formats:
+
+| result_format | Description
+| :-----------: | :--- |
+| json | Plain json
+| json_detail | Row data plus metadata describing the fields, pivots, table calcs, and other aspects of the query
+| csv | Comma separated values with a header
+| txt | Tab separated values with a header
+| html | Simple html
+| md | Simple markdown
+| xlsx | MS Excel spreadsheet
+| sql | Returns the generated SQL rather than running the query
+| png | A PNG image of the visualization of the query
+| jpg | A JPG image of the visualization of the query
+
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.QueryApi()
 
@@ -526,7 +659,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: text, application/json, image/png, image/jpg
@@ -537,11 +670,65 @@ No authorization required
 
 Run Url Encoded Query
 
-### Run an URL encoded query.\n\nThis requires the caller to encode the specifiers for the query into the URL query part using\nLooker-specific syntax as explained below.\n\nGenerally, you would want to use one of the methods that takes the parameters as json in the POST body\nfor creating and/or running queries. This method exists for cases where one really needs to encode the\nparameters into the URL of a single &#39;GET&#39; request. This matches the way that the Looker UI formats\n&#39;explore&#39; URLs etc.\n\nThe parameters here are very similar to the json body formatting except that the filter syntax is\ntricky. Unfortunately, this format makes this method not currently callible via the &#39;Try it out!&#39; button\nin this documentation page. But, this is callable  when creating URLs manually or when using the Looker SDK.\n\nHere is an example inline query URL:\n\n```\nhttps://looker.mycompany.com:19999/api/3.0/queries/models/thelook/views/inventory_items/run/json?fields=category.name,inventory_items.days_in_inventory_tier,products.count&amp;f[category.name]=socks&amp;sorts=products.count+desc+0&amp;limit=500&amp;query_timezone=America/Los_Angeles\n```\n\nWhen invoking this endpoint with the Ruby SDK, pass the query parameter parts as a hash. The hash to match the above would look like:\n\n```ruby\nquery_params =\n{\n  :fields =&gt; \&quot;category.name,inventory_items.days_in_inventory_tier,products.count\&quot;,\n  :\&quot;f[category.name]\&quot; =&gt; \&quot;socks\&quot;,\n  :sorts =&gt; \&quot;products.count desc 0\&quot;,\n  :limit =&gt; \&quot;500\&quot;,\n  :query_timezone =&gt; \&quot;America/Los_Angeles\&quot;\n}\nresponse = ruby_sdk.run_url_encoded_query(&#39;thelook&#39;,&#39;inventory_items&#39;,&#39;json&#39;, query_params)\n\n```\n\nAgain, it is generally easier to use the variant of this method that passes the full query in the POST body.\nThis method is available for cases where other alternatives won&#39;t fit the need.\n\nSuported formats:\n\n| result_format | Description\n| :-----------: | :--- |\n| json | Plain json\n| json_detail | Row data plus metadata describing the fields, pivots, table calcs, and other aspects of the query\n| csv | Comma separated values with a header\n| txt | Tab separated values with a header\n| html | Simple html\n| md | Simple markdown\n| xlsx | MS Excel spreadsheet\n| sql | Returns the generated SQL rather than running the query\n| png | A PNG image of the visualization of the query\n| jpg | A JPG image of the visualization of the query\n\n\n
+### Run an URL encoded query.
+
+This requires the caller to encode the specifiers for the query into the URL query part using
+Looker-specific syntax as explained below.
+
+Generally, you would want to use one of the methods that takes the parameters as json in the POST body
+for creating and/or running queries. This method exists for cases where one really needs to encode the
+parameters into the URL of a single &#39;GET&#39; request. This matches the way that the Looker UI formats
+&#39;explore&#39; URLs etc.
+
+The parameters here are very similar to the json body formatting except that the filter syntax is
+tricky. Unfortunately, this format makes this method not currently callible via the &#39;Try it out!&#39; button
+in this documentation page. But, this is callable  when creating URLs manually or when using the Looker SDK.
+
+Here is an example inline query URL:
+
+```
+https://looker.mycompany.com:19999/api/3.0/queries/models/thelook/views/inventory_items/run/json?fields=category.name,inventory_items.days_in_inventory_tier,products.count&amp;f[category.name]=socks&amp;sorts=products.count+desc+0&amp;limit=500&amp;query_timezone=America/Los_Angeles
+```
+
+When invoking this endpoint with the Ruby SDK, pass the query parameter parts as a hash. The hash to match the above would look like:
+
+```ruby
+query_params =
+{
+  :fields =&gt; \&quot;category.name,inventory_items.days_in_inventory_tier,products.count\&quot;,
+  :\&quot;f[category.name]\&quot; =&gt; \&quot;socks\&quot;,
+  :sorts =&gt; \&quot;products.count desc 0\&quot;,
+  :limit =&gt; \&quot;500\&quot;,
+  :query_timezone =&gt; \&quot;America/Los_Angeles\&quot;
+}
+response = ruby_sdk.run_url_encoded_query(&#39;thelook&#39;,&#39;inventory_items&#39;,&#39;json&#39;, query_params)
+
+```
+
+Again, it is generally easier to use the variant of this method that passes the full query in the POST body.
+This method is available for cases where other alternatives won&#39;t fit the need.
+
+Suported formats:
+
+| result_format | Description
+| :-----------: | :--- |
+| json | Plain json
+| json_detail | Row data plus metadata describing the fields, pivots, table calcs, and other aspects of the query
+| csv | Comma separated values with a header
+| txt | Tab separated values with a header
+| html | Simple html
+| md | Simple markdown
+| xlsx | MS Excel spreadsheet
+| sql | Returns the generated SQL rather than running the query
+| png | A PNG image of the visualization of the query
+| jpg | A JPG image of the visualization of the query
+
+
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.QueryApi()
 
@@ -578,7 +765,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: text, application/json, image/png, image/jpg

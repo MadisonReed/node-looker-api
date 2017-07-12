@@ -15,11 +15,12 @@ Method | HTTP request | Description
 
 Get All Datagroups
 
-### Get information about all datagroups.\n
+### Get information about all datagroups.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.DatagroupApi()
 
@@ -44,7 +45,7 @@ This endpoint does not need any parameter.
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -55,11 +56,12 @@ No authorization required
 
 Get Datagroup
 
-### Get information about a datagroup.\n
+### Get information about a datagroup.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.DatagroupApi()
 
@@ -90,7 +92,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -101,11 +103,12 @@ No authorization required
 
 Update Datagroup
 
-### Update a datagroup using the specified params.\n
+### Update a datagroup using the specified params.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.DatagroupApi()
 
@@ -139,7 +142,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json

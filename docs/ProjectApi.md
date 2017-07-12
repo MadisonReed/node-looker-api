@@ -19,11 +19,14 @@ Method | HTTP request | Description
 
 Get All Project Files
 
-### Get All Project Files\n\nReturns a list of the files in the project\n
+### Get All Project Files
+
+Returns a list of the files in the project
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ProjectApi()
 
@@ -58,7 +61,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -69,11 +72,14 @@ No authorization required
 
 Get All Projects
 
-### Get All Projects\n\nReturns all projects visible to the current user\n
+### Get All Projects
+
+Returns all projects visible to the current user
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ProjectApi()
 
@@ -105,7 +111,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -116,11 +122,14 @@ No authorization required
 
 Get Project
 
-### Get A Project\n\nReturns the project with the given project id\n
+### Get A Project
+
+Returns the project with the given project id
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ProjectApi()
 
@@ -155,7 +164,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -166,11 +175,14 @@ No authorization required
 
 Get Project File
 
-### Get Project File Info\n\nReturns information about a file in the project\n
+### Get Project File Info
+
+Returns information about a file in the project
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ProjectApi()
 
@@ -208,7 +220,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -219,11 +231,23 @@ No authorization required
 
 Cached Project Validation Results
 
-### Get Cached Project Validation Results\n\nReturns the cached results of a previous project validation calculation, if any.\nReturns http status 204 No Content if no validation results exist.\n\nValidating the content of all the files in a project can be computationally intensive\nfor large projects. Use this API to simply fetch the results of the most recent\nproject validation rather than revalidating the entire project from scratch.\n\nA value of `\&quot;stale\&quot;: true` in the response indicates that the project has changed since\nthe cached validation results were computed. The cached validation results may no longer\nreflect the current state of the project.\n
+### Get Cached Project Validation Results
+
+Returns the cached results of a previous project validation calculation, if any.
+Returns http status 204 No Content if no validation results exist.
+
+Validating the content of all the files in a project can be computationally intensive
+for large projects. Use this API to simply fetch the results of the most recent
+project validation rather than revalidating the entire project from scratch.
+
+A value of `\&quot;stale\&quot;: true` in the response indicates that the project has changed since
+the cached validation results were computed. The cached validation results may no longer
+reflect the current state of the project.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ProjectApi()
 
@@ -258,7 +282,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -269,11 +293,14 @@ No authorization required
 
 Reset To Production
 
-### Reset a project to the revision of the project that is in production.\n\n**DANGER** this will delete any changes that have not been pushed to a remote repository.\n
+### Reset a project to the revision of the project that is in production.
+
+**DANGER** this will delete any changes that have not been pushed to a remote repository.
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ProjectApi()
 
@@ -304,7 +331,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -315,11 +342,20 @@ No authorization required
 
 Validate Project
 
-### Validate Project\n\nPerforms lint validation of all lookml files in the project.\nReturns a list of errors found, if any.\n\nValidating the content of all the files in a project can be computationally intensive\nfor large projects. For best performance, call `validate_project(project_id)` only\nwhen you really want to recompute project validation. To quickly display the results of \nthe most recent project validation (without recomputing), use `project_validation_results(project_id)`\n
+### Validate Project
+
+Performs lint validation of all lookml files in the project.
+Returns a list of errors found, if any.
+
+Validating the content of all the files in a project can be computationally intensive
+for large projects. For best performance, call `validate_project(project_id)` only
+when you really want to recompute project validation. To quickly display the results of 
+the most recent project validation (without recomputing), use `project_validation_results(project_id)`
+
 
 ### Example
 ```javascript
-var LookerApi30Reference = require('looker-api-3/0-reference');
+var LookerApi30Reference = require('looker-api-3');
 
 var apiInstance = new LookerApi30Reference.ProjectApi()
 
@@ -354,7 +390,7 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
