@@ -59,8 +59,12 @@
     this.timeout = 60000;
   };
 
-  exports.prototype.setInstanceName = function(name) {
-    this.basePath = this._basePath.replace('INSTANCE_NAME',name);
+  exports.prototype.setInstanceName = function(name, fullUrl=false) {
+    if (fullUrl) {
+      this.basePath = name;
+    } else {
+      this.basePath = this._basePath.replace('INSTANCE_NAME',name);
+    } 
   }
 
   /**
