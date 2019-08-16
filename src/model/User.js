@@ -100,7 +100,7 @@
       if (data.hasOwnProperty('embed_group_space_id')) {
         obj['embed_group_space_id'] = ApiClient.convertToType(data['embed_group_space_id'], 'Integer');
       }
-      if (data.hasOwnProperty('access_filters')) {
+      if (data.hasOwnProperty('access_filters') && Array.isArray(data['access_filters'])) {
         obj['access_filters'] = ApiClient.convertToType(data['access_filters'], [AccessFilter]);
       }
       if (data.hasOwnProperty('credentials_email')) {
